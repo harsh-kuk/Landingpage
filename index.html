@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding Wellness</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="nav.css">
+
+    <style>
+      .container{
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .pic{
+        display: flex;
+        justify-content: center;
+      }
+
+      .pic img{
+        width: 60%;
+      }
+
+      .text div{
+        margin-left: 10px;
+        padding: 10px;
+        font-size: 2.5rem;
+      }
+
+      .text div span{
+        font-weight: bold;
+      }
+
+      @media only screen and (max-width:55em){
+        .text div{
+          font-size: 2rem;
+        }
+      }
+
+      @media only screen and (max-width:37.5em){
+        .text div{
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        .container{
+          flex-direction: column;
+       }
+      }
+
+      @media only screen and (max-width:31.25em){
+        .text div{
+          font-size: 1.5rem;
+        }
+
+      .pic img{
+        width: 50%;
+      }
+
+    }
+
+    @media only screen and (max-width:23.75em){
+        .text div{
+          font-size: 1.1rem;
+        }
+
+      .pic img{
+        width: 40%;
+      }
+
+    }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <div>Hello everyone Welcome to</div>
+      <div><span id="element"></span></div>
+    </div>
+    <div class="pic">
+      <img src="logo3.jpeg" alt="Logo">
+    </div>
+  </div>
+  <hr>
+    
+    <script src="nav.js"></script>
+    <script src="https://kit.fontawesome.com/f969d0e88b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Branding Mudra!', 'Branding Wellness!'],
+        typeSpeed: 50,
+      });
+    </script>
+</body>
+</html>

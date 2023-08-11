@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+header{
+    top: 0;
+    left: 0;
+    position: sticky;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(238, 231, 172, 0.808);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+
+nav .logo{
+    display: flex;
+    font-size: 2rem;
+    margin-left: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo img{
+    width: 50px;
+    margin-right: 4px;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.hamburger{
+    display: none;
+    margin-right: 2em;
+}
+
+/* media query for 880 pixel */
+
+@media only screen and (max-width:55em){
+    .hamburger{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    ul.ham-active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 3em;
+        background-color: black;
+        width: 50%;
+        height: 100vh;
+        margin-left: 50%;
+    }
+
+}
+
+/* media query for 500 pixel */
+
+@media only screen and (max-width:31.25em){
+    ul.ham-active{
+        width: 60%;
+        margin-left: 40%;
+    }
+
+    nav .logo{
+        font-size: 1.5rem;
+    }
+    
+    nav .logo img{
+        width: 40px;    
+    }
+}
+
+/* media query for 400 pixel */
+
+@media only screen and (max-width:25em){
+    ul.ham-active{
+        width: 100%;
+        margin: 0%;
+    }
+
+    nav .logo{
+        font-size: 1.2rem;
+    }
+    
+    nav .logo img{
+        width: 40px;    
+    }
+}
